@@ -80,4 +80,8 @@
     <string name="txttime">Available Time : After 10 min</string>
     <string name="txtcontact">Contact Number : 0712121211</string>
     <string name="txtvehicle">Vehicle Number : 6789-BC-98</string>
+    <string name="title_activity_explore">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

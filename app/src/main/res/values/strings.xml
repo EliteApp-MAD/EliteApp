@@ -1,18 +1,18 @@
 <resources>
     <string name="app_name">ElitePage1</string>
-    <string name="buy_btn">Buy</string>
-    <string name="buy_header">Apple</string>
-    <string name="buy_header1">Rs.250.00</string>
-    <string name="buy_header2">1kg</string>
-    <string name="buy_header3">Quantity</string>
-    <string name="r_btn1">-</string>
-    <string name="r_btn2">+</string>
-    <string name="buy_header4">2</string>
-    <string name="btn_add">ADD TO CART</string>
-    <string name="btn_ra">Submit</string>
-    <string name="get_rate">RATE</string>
-    <string name="suggest_h">Suggest an Item</string>
-    <string name="btn_sub">Submit</string>
-    <string name="fv_header">Fruit and Vegetable</string>
-    <string name="btn1_nav">"Click here to suggest item "</string>
+    <string name="txtdes2">ENTER CONTACT DETAILS</string>
+    <string name="txtphone">Phone</string>
+    <string name="txtaddress">Address</string>
+    <string name="txtdes">SELECT THE DRIVER</string>
+    <string name="txtdriver1">W.A.Saman Bandara</string>
+    <string name="txtdriver2">P.M.Nimal Perera</string>
+    <string name="txtdriver3">N.A.Gayan Liyanage</string>
+    <string name="txtdriver4">B.S.Bimal Silva</string>
+    <string name="txtdes3">W.A.Saman Bandara</string>
+    <string name="txtdeliveries">24K | Successful Deliveries</string>
+    <string name="txtdes4">Malabe</string>
+    <string name="txtname">Name : W.A.Saman Bandara</string>
+    <string name="txttime">Available Time : After 10 min</string>
+    <string name="txtcontact">Contact Number : 0712121211</string>
+    <string name="txtvehicle">Vehicle Number : 6789-BC-98</string>
 </resources>

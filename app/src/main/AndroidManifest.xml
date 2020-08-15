@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Payment_Methods"></activity>
+        <activity android:name=".Payment_Unsuccsess"></activity>
+        <activity android:name=".Payment_paid_Success" />
+        <activity android:name=".Profile" />
+        <activity android:name=".SuccessfullMessage" />
+        <activity android:name=".Payment_Methods" />
         <activity android:name=".Payment" />
         <activity
             android:name=".Explore"

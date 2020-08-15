@@ -12,4 +12,13 @@
     <color name="price">#C8F2C2</color>
     <color name="name_tag">#6E7989</color>
     <color name="r_btn">#C2F2B7</color>
+
+    <color name="btColor">#B8FFA1</color>
+    <color name="btColor2">#47F420</color>
+    <color name="btColor4">#474747</color>
+    <color name="btColor3">#FFAA00</color>
+    <color name="btColor5">#00FFAE</color>
+
+
+
 </resources>

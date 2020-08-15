@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6DF46F</color>
-    <color name="colorPrimaryDark">#2A6500</color>
-    <color name="colorAccent">#2A4542</color>
-    <color name="btColor">#BBFF96</color>
-    <color name="btColor2">#8DFF6E</color>
-    <color name="btColor3">#F4DB00</color>
-    <color name="btColor4">#7A7A7A</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#F7FCFA</color>
+    <color name="container2_border">#AAEAA0</color>
+    <color name="btn_font">#29C17E</color>
+    <color name="btn_color">#93FC22</color>
+    <color name="fv_h">#1CC700</color>
+    <color name="fv_h_back">#D5FEA9</color>
+    <color name="price">#C8F2C2</color>
+    <color name="name_tag">#6E7989</color>
+    <color name="r_btn">#C2F2B7</color>
 </resources>

@@ -1,3 +1,50 @@
 <resources>
     <string name="app_name">ElitePage1</string>
+    <string name="shoppingcartfinal">Shopping Cart</string>
+    <string name="chocolatecake">Chocolate Cake</string>
+    <string name="chocoquantity">Quantity</string>
+    <string name="chocoprice">Price</string>
+    <string name="chocoqvalue">1</string>
+    <string name="chocopvalue">Rs.300.00</string>
+    <string name="chocoremove">Remove Item</string>
+    <string name="carrotveg">Carrot</string>
+    <string name="carrotquantity">Quantity</string>
+    <string name="carrotprice">Price</string>
+    <string name="carrotqvalue">2</string>
+    <string name="carrotpvalue">Rs.500.00</string>
+    <string name="carrotremove">Remove Item</string>
+    <string name="finalsubtot">Sub Total</string>
+    <string name="finalsubval">Rs.800.00</string>
+    <string name="finalconfirm">Confirm and pay</string>
+
+    <string name="shoppingcartremove">Shopping Cart</string>
+    <string name="crt">Carrot</string>
+    <string name="crtquantity">Quantity</string>
+    <string name="crtprice">Price</string>
+    <string name="crtqvalue">2</string>
+    <string name="crtpvalue">Rs.500.00</string>
+    <string name="crtremove">Remove Item</string>
+    <string name="subtot">Sub Total</string>
+    <string name="subval">Rs.500.00</string>
+    <string name="confirm">Confirm and pay</string>
+
+    <string name="signup">Sign Up</string>
+    <string name="welcomesu">Welcome to Elite</string>
+    <string name="usernamesu">User Name   *</string>
+    <string name="usernamesuval">User Name   *</string>
+    <string name="passwordsu">Password   *</string>
+    <string name="passwordsuval">Password   *</string>
+    <string name="emailsu">Email   *</string>
+    <string name="emailsuval">abc@d.com</string>
+    <string name="msgsu">By creating an account you agree to our terms of services and privacy policy.</string>
+    <string name="btnsignup">Create an account</string>
+
+    <string name="signin">Sign In</string>
+    <string name="welcomesi">Welcome to Elite</string>
+    <string name="usernamesi">User Name   *</string>
+    <string name="usernamesival">User Name   *</string>
+    <string name="passwordsi">Password   *</string>
+    <string name="passwordsival">Password   *</string>
+    <string name="btnsignin">Sign In</string>
+
 </resources>

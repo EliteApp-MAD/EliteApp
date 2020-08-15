@@ -2,7 +2,9 @@ package com.example.elitepage1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -57,6 +59,21 @@ public class Item_buy extends AppCompatActivity {
 
         btn_ra=findViewById(R.id.btn_ra);
         btn_ra.setText(R.string.btn_ra);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        badd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Item_buy.this,ShoppingCartFinal.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
 }

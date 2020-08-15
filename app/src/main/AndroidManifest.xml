@@ -12,12 +12,23 @@
         <activity android:name=".Item_buy"></activity>
         <activity android:name=".Item_Suggest" />
         <activity android:name=".Display" />
-        <activity android:name=".List">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".driver1">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".Delivery1" >
+
+
+        </activity>
+        <activity android:name=".deliverydetails" >
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>>
+        <activity android:name=".List">
+
         </activity>
         <activity android:name=".MainActivity" />
     </application>

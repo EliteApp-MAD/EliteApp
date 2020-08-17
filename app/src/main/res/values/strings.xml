@@ -37,7 +37,7 @@
     <string name="emailsu">Email   *</string>
     <string name="emailsuval">abc@d.com</string>
     <string name="msgsu">By creating an account you agree to our terms of services and privacy policy.</string>
-    <string name="btnsignup">Create An Account</string>
+    <string name="btnsignup">Create an Account</string>
 
     <string name="signin">Sign In</string>
     <string name="welcomesi">Welcome to Elite</string>

@@ -1,6 +1,23 @@
 <resources>
     <string name="app_name">ElitePage1</string>
 
+    <string name="txtdes2">ENTER CONTACT DETAILS</string>
+    <string name="txtphone">Phone</string>
+    <string name="txtaddress">Address</string>
+    <string name="txtdes">SELECT THE DRIVER</string>
+    <string name="txtdriver1">W.A.Saman Bandara</string>
+    <string name="txtdriver2">P.M.Nimal Perera</string>
+    <string name="txtdriver3">N.A.Gayan Liyanage</string>
+    <string name="txtdriver4">B.S.Bimal Silva</string>
+    <string name="txtdes3">W.A.Saman Bandara</string>
+    <string name="txtdeliveries">24K | Successful Deliveries</string>
+    <string name="txtdes4">Malabe</string>
+    <string name="txtname">Name : W.A.Saman Bandara</string>
+    <string name="txttime">Available Time : After 10 min</string>
+    <string name="txtcontact">Contact Number : 0712121211</string>
+    <string name="txtvehicle">Vehicle Number : 6789-BC-98</string>
+
+
     <string name="shoppingcartfinal">Shopping Cart</string>
     <string name="chocolatecake">Chocolate Cake</string>
     <string name="chocoquantity">Quantity</string>

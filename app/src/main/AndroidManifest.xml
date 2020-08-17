@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".driver1"></activity>
+        <activity android:name=".Delivery1" />
+
+
         <activity android:name=".SignUp"/>
         <activity android:name=".SignIn"/>
         <activity android:name=".ShoppingCartRemove" />
@@ -31,6 +35,7 @@
             android:name=".Explore"
             android:label="@string/title_activity_explore" />
         <activity android:name=".Explore_Home" />
+
         <activity android:name=".MainActivity">
 
             <intent-filter>
@@ -38,6 +43,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

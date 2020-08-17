@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">ElitePage1</string>
+
     <string name="buy_btn">Buy</string>
     <string name="buy_header">Apple</string>
     <string name="buy_header1">Rs.250.00</string>
@@ -15,4 +16,11 @@
     <string name="btn_sub">Submit</string>
     <string name="fv_header">Fruit and Vegetable</string>
     <string name="btn1_nav">"Click here to suggest item "</string>
+
+    <string name="title_activity_explore">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="first_btn">btn</string>
+
 </resources>

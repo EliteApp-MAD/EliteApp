@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".SignUp"/>
+        <activity android:name=".SignIn"/>
+        <activity android:name=".ShoppingCartRemove" />
+        <activity android:name=".ShoppingCartFinal"/>
+
         <activity android:name=".Item_buy"></activity>
         <activity android:name=".Item_Suggest" />
         <activity android:name=".Display" />

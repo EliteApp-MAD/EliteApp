@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">ElitePage1</string>
+
     <string name="shoppingcartfinal">Shopping Cart</string>
     <string name="chocolatecake">Chocolate Cake</string>
     <string name="chocoquantity">Quantity</string>
@@ -46,5 +47,28 @@
     <string name="passwordsi">Password   *</string>
     <string name="passwordsival">Password   *</string>
     <string name="btnsignin">Sign In</string>
+
+
+    <string name="buy_btn">Buy</string>
+    <string name="buy_header">Apple</string>
+    <string name="buy_header1">Rs.250.00</string>
+    <string name="buy_header2">1kg</string>
+    <string name="buy_header3">Quantity</string>
+    <string name="r_btn1">-</string>
+    <string name="r_btn2">+</string>
+    <string name="buy_header4">2</string>
+    <string name="btn_add">ADD TO CART</string>
+    <string name="btn_ra">Submit</string>
+    <string name="get_rate">RATE</string>
+    <string name="suggest_h">Suggest an Item</string>
+    <string name="btn_sub">Submit</string>
+    <string name="fv_header">Fruit and Vegetable</string>
+    <string name="btn1_nav">"Click here to suggest item "</string>
+
+    <string name="title_activity_explore">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="first_btn">btn</string>
 
 </resources>

@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".Item_buy"></activity>
+        <activity android:name=".Item_Suggest" />
+        <activity android:name=".Display" />
+        <activity android:name=".List"></activity>
+        <activity android:name=".MainActivity" >
+
         <activity android:name=".Payment_Unsuccsess"></activity>
         <activity android:name=".Payment_paid_Success" />
         <activity android:name=".Profile" />
@@ -20,6 +27,7 @@
             android:label="@string/title_activity_explore" />
         <activity android:name=".Explore_Home" />
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

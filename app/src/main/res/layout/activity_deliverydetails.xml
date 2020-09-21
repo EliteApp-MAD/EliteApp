@@ -114,6 +114,8 @@
         app:layout_constraintVertical_bias="0.011"
         app:srcCompat="@drawable/logo" />
 
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -128,5 +130,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottom_navigation" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

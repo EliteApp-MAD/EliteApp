@@ -84,4 +84,12 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="textar11">ADD NEW ITEAM</string>
+    <string name="textar22">Iteam Name</string>
+    <string name="textar33">Price per Kg</string>
+    <string name="txtar44">category</string>
+    <string name="btnregg">Submit</string>
+    <string name="btningg">"Choose a Image "</string>
+    <string name="btnimgg">Add an Image</string>
+    <string name="btnreg">Submit</string>
 </resources>

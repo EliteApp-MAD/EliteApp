@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">ElitePage1</string>
+
     <string name="buy_btn">Buy</string>
     <string name="buy_header">Apple</string>
     <string name="buy_header1">Rs.250.00</string>
@@ -80,10 +81,13 @@
     <string name="txttime">Available Time : After 10 min</string>
     <string name="txtcontact">Contact Number : 0712121211</string>
     <string name="txtvehicle">Vehicle Number : 6789-BC-98</string>
+
     <string name="title_activity_explore">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="first_btn">btn</string>
+
     <string name="textar11">ADD NEW ITEAM</string>
     <string name="textar22">Iteam Name</string>
     <string name="textar33">Price per Kg</string>

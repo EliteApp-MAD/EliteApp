@@ -154,7 +154,7 @@ public class Item_buy extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(Item_buy.this,ShoppingCartFinal.class);
+                Intent intent = new Intent(Item_buy.this,CartListDisplay.class);
                 startActivity(intent);
 
             }

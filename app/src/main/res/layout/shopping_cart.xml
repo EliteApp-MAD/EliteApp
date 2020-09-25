@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/elite_baclground2">
+
+    <ImageView
+        android:id="@+id/itemimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="500dp"
+        app:srcCompat="@drawable/cake" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="122dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="251dp"
+        android:layout_marginBottom="457dp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="407dp" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="356dp" />
+
+</RelativeLayout>

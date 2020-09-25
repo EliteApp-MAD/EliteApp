@@ -66,7 +66,7 @@
     <string name="btn1_nav">"Click here to suggest item "</string>
 
 
-    <string name="shoppingcartfinal">Shopping Cart</string>
+ <!--   <string name="shoppingcartfinal">Shopping Cart</string>
     <string name="chocolatecake">Chocolate Cake</string>
     <string name="chocoquantity">Quantity</string>
     <string name="chocoprice">Price</string>
@@ -111,7 +111,7 @@
     <string name="usernamesival">User Name   *</string>
     <string name="passwordsi">Password   *</string>
     <string name="passwordsival">Password   *</string>
-    <string name="btnsignin">Sign In</string>
+    <string name="btnsignin">Sign In</string>   -->
 
 
     <string name="txtdes2">ENTER CONTACT DETAILS</string>

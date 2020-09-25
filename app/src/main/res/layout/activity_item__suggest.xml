@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Item_Suggest"
+    android:background="@drawable/elite_baclground2">
+
+    <TextView
+        android:id="@+id/Suggest_header"
+        android:layout_width="292dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="491dp"
+        android:textColor="@color/fv_h"
+        android:textSize="20dp"
+        android:textAlignment="center"
+
+        />
+
+    <EditText
+        android:id="@+id/sugesstItem"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="374dp" />
+
+    <EditText
+        android:id="@+id/customerID"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="431dp" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="184dp"
+        android:layout_height="77dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="256dp"
+        android:textColor="@color/fv_h"
+        android:background="@drawable/boardersuggest"/>
+
+    <ImageView
+        android:layout_width="171dp"
+        android:layout_height="142dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="87dp"
+        android:src="@drawable/mira" />
+
+</RelativeLayout>

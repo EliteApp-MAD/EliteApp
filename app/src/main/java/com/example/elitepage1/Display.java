@@ -47,20 +47,21 @@ public class Display extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        btn1_nav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(Display.this,Item_Suggest.class);
-                startActivity(intent);
-
-            }
-        });
         buy_btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent intent = new Intent(Display.this,Item_buy.class);
+                startActivity(intent);
+
+            }
+        });
+
+         btn1_nav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Display.this,Item_Suggest.class);
                 startActivity(intent);
 
             }

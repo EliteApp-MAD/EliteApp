@@ -43,6 +43,7 @@ public class Item_buy extends AppCompatActivity {
     Button btn_ra;
     Button btn_save;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         list1 = new ArrayList<>();
@@ -50,6 +51,7 @@ public class Item_buy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_buy);
         btn_save=findViewById(R.id.buy_savelist);
+        btn_save.setText("Buy");
         buy_header = findViewById(R.id.buy_headera);
         //buy_header.setText(Name);
         buy_header4aa=findViewById(R.id.buy_header4a);
@@ -75,10 +77,12 @@ public class Item_buy extends AppCompatActivity {
         rbt2.setText(R.string.r_btn2);
 
         badd = findViewById(R.id.buy_adda);
-        badd.setText(R.string.btn_add);
+        badd.setText("View Cart");
 
         btn_ra = findViewById(R.id.btn_ra);
         btn_ra.setText(R.string.btn_ra);
+
+
 
         final String id = getIntent().getStringExtra("id");
         final String Name = getIntent().getStringExtra("name");

@@ -22,17 +22,16 @@
             android:label="Item List"
             android:parentActivityName=".newReg" />
         <activity android:name=".MainActivity" ></activity>
-        <activity android:name=".Item_buy" />
+        <!--<activity android:name=".Item_buy" />-->
 
         <activity android:name=".Item_buy"></activity>
         <activity android:name=".Item_Suggest" />
         <activity android:name=".Display" />
         <activity android:name=".List"></activity>
-        <activity android:name=".MainActivity" >
+        <!--<activity android:name=".MainActivity" >-->
 
         <activity android:name=".Payment_Unsuccsess"></activity>
         <activity android:name=".Payment_paid_Success" />
-        <activity android:name=".Profile" />
         <activity android:name=".SuccessfullMessage" />
         <activity android:name=".Payment_Methods" />
         <activity android:name=".driver1" />
@@ -50,16 +49,14 @@
          <activity android:name=".List"></activity>
          <activity android:name=".MainActivity" >-->
 
-        <activity android:name=".Payment_Unsuccsess" />
+       <!-- <activity android:name=".Payment_Unsuccsess" />
         <activity android:name=".Payment_paid_Success" />
         <activity android:name=".SuccessfullMessage"/>
-        <activity android:name=".Payment_Methods" />
-        <activity android:name=".Payment" />
+        <activity android:name=".Payment_Methods" />-->
         <activity
             android:name=".Explore"
             android:label="@string/title_activity_explore" />
-        <activity android:name=".Explore_Home" />
-        <activity android:name=".MainActivity">
+        <!-- <activity android:name=".MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,7 +67,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
     </application>
 
 </manifest>

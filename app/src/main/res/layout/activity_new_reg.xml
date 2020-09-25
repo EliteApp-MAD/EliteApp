@@ -95,18 +95,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.866"
-        tools:text="@string/btnreg" />
+        tools:text="@string/btnreg"
+        android:background="@drawable/boardersuggest"
+        android:textColor="@color/fv_h"/>
 
 
     <Button
         android:id="@+id/btn_dis"
         android:layout_width="249dp"
         android:layout_height="49dp"
+        android:background="@drawable/boardersuggest"
+        android:textColor="@color/fv_h"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.998"
+        app:layout_constraintVertical_bias="0.996"
         tools:text="@string/btnreg" />
 
     <EditText
@@ -141,22 +145,24 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762"
+        app:layout_constraintVertical_bias="0.71"
         app:srcCompat="@drawable/ap" />
 
     <Button
         android:id="@+id/btnImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/boardersuggest"
+        android:textColor="@color/fv_h"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintHorizontal_bias="0.608"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.756"
+        app:layout_constraintVertical_bias="0.699"
         tools:text="@string/btnimgg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

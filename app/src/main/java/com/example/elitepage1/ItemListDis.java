@@ -39,12 +39,14 @@ public class ItemListDis extends AppCompatActivity {
     ItemListAdapter adapter = null;
     Button btnbuy;
     Context context;
+    Button btnsugne;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_list_activity);
-
+        btnsugne=findViewById(R.id.btnsugnew);
+        btnsugne.setText(R.string.suggest_h);
         //linearLayout = findViewById(R.id.gridView1);
         btnbuy = findViewById(R.id.buy_btn2);
         gridView = findViewById(R.id.gridView);
@@ -67,6 +69,8 @@ public class ItemListDis extends AppCompatActivity {
         }
         adapter.notifyDataSetChanged();
 
+
+
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
@@ -74,10 +78,10 @@ public class ItemListDis extends AppCompatActivity {
                 // -
                 final ItemList itemList =list.get(position);
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setTitle("Test");
-                builder.setMessage("dddd");
+                builder.setTitle("Confirmation");
+                builder.setMessage("Confirm the Item");
 
-                builder.setPositiveButton("Buy", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                        //startActivity(new Intent(context,Item_buy.class));
@@ -101,7 +105,15 @@ public class ItemListDis extends AppCompatActivity {
                 builder.show();
             }
         });
+        btnsugne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                Intent intent = new Intent(ItemListDis.this,Item_Suggest.class);
+                startActivity(intent);
+
+            }
+        });
 
     }
 

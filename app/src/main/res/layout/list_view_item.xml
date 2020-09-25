@@ -50,9 +50,9 @@
         android:layout_below="@+id/txtName"
         android:layout_alignEnd="@+id/txtName"
         android:layout_alignRight="@+id/txtName"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
         android:text="Price"
         android:textAlignment="center"
         android:textColor="#ce1309"
@@ -66,24 +66,24 @@
         android:layout_alignEnd="@+id/txtName"
         android:layout_alignRight="@+id/txtName"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginRight="-15dp"
         android:text="category"
         android:textAlignment="center"
         android:textColor="#ce1309"
         android:textSize="17sp" />
 
-   <!-- <Button
-        android:id="@+id/buy_btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="262dp"
-        android:background="@drawable/boardersuggest"
-        android:textColor="@color/fv_h" />-->
+    <!-- <Button
+         android:id="@+id/buy_btn2"
+         android:layout_width="wrap_content"
+         android:layout_height="20dp"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:layout_centerVertical="true"
+         android:layout_marginStart="38dp"
+         android:layout_marginTop="262dp"
+         android:background="@drawable/boardersuggest"
+         android:textColor="@color/fv_h" />-->
 
 
 </RelativeLayout>

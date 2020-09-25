@@ -39,9 +39,9 @@ public class newReg extends AppCompatActivity {
         choose=(Button)findViewById(R.id.btnImg);
         choose.setText("Add an Image");
         Submit=(Button)findViewById(R.id.btn_reg);
-        Submit.setText("Submit");
+        Submit.setText("Add Item");
         dispaly=(Button)findViewById(R.id.btn_dis);
-        dispaly.setText("Submit");
+        dispaly.setText("View Item List");
         imageView = (ImageView) findViewById(R.id.imageView);
     }
 

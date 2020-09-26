@@ -22,6 +22,11 @@
         <activity android:name=".CartListDisplay"
             android:label="Cart List"
             android:parentActivityName=".Item_buy" />
+
+        <activity android:name=".ItemListDis"
+            android:label="Item List"
+            android:parentActivityName=".newReg" />
+
         <activity android:name=".MainActivity" ></activity>
         <!--<activity android:name=".Item_buy" />-->
 

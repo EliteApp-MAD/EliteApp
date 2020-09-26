@@ -48,31 +48,33 @@ public class CartListAdapter extends BaseAdapter {
     public View getView(int position, View view, ViewGroup viewGroup) {
 
         View row = view;
-        CartListAdapter.ViewHolder holder = new CartListAdapter.ViewHolder();
+        //CartListAdapter.ViewHolder holder = new CartListAdapter.ViewHolder();
+        ViewHolder holder1 =  new ViewHolder();
 
         if(row == null){
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = inflater.inflate(layout, null);
 
-            holder.name = (TextView) row.findViewById(R.id.name);
-            holder.price = (TextView) row.findViewById(R.id.price);
-            holder.quantity = (TextView) row.findViewById(R.id.quantity);
-            holder.itemimage = (ImageView) row.findViewById(R.id.imgFood);
+            holder1.name = (TextView) row.findViewById(R.id.txtName1);
+            holder1.price = (TextView) row.findViewById(R.id.txtPrice1);
+            holder1.quantity = (TextView) row.findViewById(R.id.txtCategory1);
+            holder1.itemimage = (ImageView) row.findViewById(R.id.imgitem);
             //holder.imageView = (ImageView) row.findViewById(R.id.imgFood);
-            row.setTag(holder);
+            row.setTag(holder1);
         }
         else {
-            holder = (CartListAdapter.ViewHolder) row.getTag();
+            holder1 = (ViewHolder) row.getTag();
         }
 
-        CartList  list = cartList.get(position);
+        CartList  list1 = cartList.get(position);
 
-        holder.name.setText(list.getName());
-        holder.price.setText(list.getPrice());
+        holder1.name.setText(list1.getName());
+        holder1.price.setText(list1.getPrice());
+        holder1.quantity.setText(list1.getQuantity());
 
-        byte[] foodImage = list.getImage();
-        Bitmap bitmap = BitmapFactory.decodeByteArray(foodImage, 0, foodImage.length);
-        holder.itemimage.setImageBitmap(bitmap);
+        byte[] foodImage1 = list1.getImage();
+        Bitmap bitmap = BitmapFactory.decodeByteArray(foodImage1, 0, foodImage1.length);
+        holder1.itemimage.setImageBitmap(bitmap);
         return row;
     }
 }

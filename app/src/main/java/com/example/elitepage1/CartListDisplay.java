@@ -44,13 +44,13 @@ public class CartListDisplay extends AppCompatActivity {
 
         //linearLayout = findViewById(R.id.gridView1);
         //   btnbuy = findViewById(R.id.buy_btn2);
-        gridView = findViewById(R.id.gridView);
+        gridView = findViewById(R.id.gridView1);
         list = new ArrayList<>();
         adapter = new CartListAdapter(this, R.layout.shopping_cart, list);
         gridView.setAdapter(adapter);
         context = this;
 
-        final Cursor cursor = Item_buy.sqLiteHelperItem.getData("SELECT * FROM CartList");
+        final Cursor cursor = Item_buy.sqLiteHelperItem.getData1("SELECT * FROM CartList");
         list.clear();
         while (cursor.moveToNext()) {
             int id = cursor.getInt(0);

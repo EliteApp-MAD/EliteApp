@@ -11,9 +11,10 @@
         android:id="@+id/imageView"
         android:layout_width="456dp"
         android:layout_height="820dp"
+        app:layout_constraintBaseline_toBaselineOf="parent"
         app:srcCompat="@drawable/elite_baclground2"
         tools:layout_editor_absoluteX="-30dp"
-        tools:layout_editor_absoluteY="-33dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -28,11 +29,11 @@
         app:srcCompat="@drawable/elite_logo" />
 
     <Button
-        android:id="@+id/signIn"
+        android:id="@+id/buttonGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#31C3EFC0"
-        android:text="Sign In"
+        android:text="Go"
         android:textColor="#00E409"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,17 +42,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.726" />
 
-    <Button
-        android:id="@+id/signUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#31DDDDDD"
-        android:text="Sign Up"
-        android:textColor="#3C3F41"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
 </androidx.constraintlayout.widget.ConstraintLayout>

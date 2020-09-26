@@ -2,10 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imageViewFood"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Item_buy"
-    android:background="@drawable/elite_baclground2">
+    android:background="@drawable/elite_baclground2"
+    tools:context=".Item_buy">
 
     <ImageView
         android:id="@+id/phone_icon"
@@ -15,10 +16,10 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="-1dp"
         android:layout_marginEnd="-4dp"
-        android:src="@drawable/ssa"
-        />
+        android:src="@drawable/ssa" />
 
     <ImageView
+        android:id="@+id/imageViewItem"
         android:layout_width="124dp"
         android:layout_height="98dp"
         android:layout_alignParentStart="true"
@@ -165,7 +166,21 @@
         android:textAlignment="center"
         android:textSize="30dp" />
 
-    <TextView
+    <!--<TextView
+        android:id="@+id/buy_header4a"
+        android:layout_width="193dp"
+        android:layout_height="37dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="301dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="265dp"
+        android:textAlignment="center"
+        android:textSize="25dp" />-->
+    <EditText
         android:id="@+id/buy_header4a"
         android:layout_width="193dp"
         android:layout_height="37dp"
@@ -238,6 +253,22 @@
         android:textColor="@color/fv_h" />
 
 
+    <Button
+        android:id="@+id/buy_savelist"
+        android:layout_width="137dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="386dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="187dp"
+        android:background="@drawable/boardersuggest"
+        android:textColor="@color/fv_h" />
+
     <TextView
         android:id="@+id/buy_ratea"
         android:layout_width="271dp"
@@ -247,13 +278,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="398dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginBottom="101dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="71dp"
         android:background="@drawable/rounded_c_for_rate"
         android:textAlignment="center"
         android:textSize="25dp" />
-
 
     <RatingBar
         android:id="@+id/ratingBara"
@@ -264,12 +294,13 @@
         android:layout_alignEnd="@+id/buy_ratea"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="73dp"
         android:layout_marginLeft="72dp"
-        android:layout_marginTop="453dp"
-        android:layout_marginEnd="65dp"
+        android:layout_marginTop="482dp"
 
-        android:layout_marginBottom="130dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="101dp"
         android:numStars="5"
         android:stepSize="1"
         app:layout_constraintStart_toStartOf="parent"
@@ -284,13 +315,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="516dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="538dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="28dp"
         android:background="@drawable/boardersuggest"
         android:textColor="@color/fv_h" />
-
 
 
 </RelativeLayout>

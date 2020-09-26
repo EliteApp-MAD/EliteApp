@@ -4,10 +4,6 @@
     <string name="txtphone">Phone</string>
     <string name="txtaddress">Address</string>
     <string name="txtdes">SELECT THE DRIVER</string>
-    <string name="txtdriver1">W.A.Saman Bandara</string>
-    <string name="txtdriver2">P.M.Nimal Perera</string>
-    <string name="txtdriver3">N.A.Gayan Liyanage</string>
-    <string name="txtdriver4">B.S.Bimal Silva</string>
     <string name="txtdes3">W.A.Saman Bandara</string>
     <string name="txtdeliveries">24K | Successful Deliveries</string>
     <string name="txtdes4">Malabe</string>

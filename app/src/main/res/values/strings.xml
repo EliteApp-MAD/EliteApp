@@ -44,7 +44,7 @@
     <string name="crtremove">Remove Item</string>
     <string name="subtot">Sub Total</string>
     <string name="subval">Rs.500.00</string>
-    <string name="confirm">Confirm and pay</string>
+    <string name="confirm">Confirm and Pay</string>
 
     <string name="signup">Sign Up</string>
     <string name="welcomesu">Welcome to Elite</string>
@@ -55,7 +55,7 @@
     <string name="emailsu">Email   *</string>
     <string name="emailsuval">abc@d.com</string>
     <string name="msgsu">By creating an account you agree to our terms of services and privacy policy.</string>
-    <string name="btnsignup">Create An Account</string>
+    <string name="btnsignup">Create an Account</string>
 
     <string name="signin">Sign In</string>
     <string name="welcomesi">Welcome to Elite</string>
@@ -83,7 +83,7 @@
     <string name="btn1_nav">"Click here to suggest item "</string>
 
 
-    <string name="shoppingcartfinal">Shopping Cart</string>
+ <!--   <string name="shoppingcartfinal">Shopping Cart</string>
     <string name="chocolatecake">Chocolate Cake</string>
     <string name="chocoquantity">Quantity</string>
     <string name="chocoprice">Price</string>
@@ -128,7 +128,7 @@
     <string name="usernamesival">User Name   *</string>
     <string name="passwordsi">Password   *</string>
     <string name="passwordsival">Password   *</string>
-    <string name="btnsignin">Sign In</string>
+    <string name="btnsignin">Sign In</string>   -->
 
 
     <string name="txtdes2">ENTER CONTACT DETAILS</string>

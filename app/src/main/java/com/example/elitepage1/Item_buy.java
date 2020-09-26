@@ -144,9 +144,19 @@ public class Item_buy extends AppCompatActivity {
             }
         });
 
+        badd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Item_buy.this,CartListDisplay.class);
+                startActivity(intent);
+
+            }
+        });
+
     }
 
-    @Override
+   /* @Override
     protected void onResume() {
         super.onResume();
 
@@ -154,12 +164,12 @@ public class Item_buy extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(Item_buy.this,ShoppingCartFinal.class);
+                Intent intent = new Intent(Item_buy.this,CartListDisplay.class);
                 startActivity(intent);
 
             }
         });
-    }
+    }*/
     public static byte[] imageViewToByte(ImageView image) {
         Bitmap bitmap = ((BitmapDrawable)image.getDrawable()).getBitmap();
         ByteArrayOutputStream stream = new ByteArrayOutputStream();

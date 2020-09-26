@@ -81,7 +81,7 @@ public class SQLiteHelperItem extends SQLiteOpenHelper {
         database.close();
     }
 
-    public Cursor getData(String sql){
+    public Cursor getData1(String sql){
         SQLiteDatabase database = getReadableDatabase();
         return database.rawQuery(sql, null);
     }

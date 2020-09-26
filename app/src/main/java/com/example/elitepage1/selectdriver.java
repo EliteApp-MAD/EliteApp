@@ -7,13 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class deliverydetails extends AppCompatActivity{
+public class selectdriver extends AppCompatActivity {
 
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_deliverydetails);
+        setContentView(R.layout.activity_selectdriver);
 
         button = findViewById(R.id.btnNext);
 

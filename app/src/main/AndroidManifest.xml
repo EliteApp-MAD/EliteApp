@@ -10,6 +10,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".selectdriver"> </activity>
+        <activity android:name=".driver" />
+        <activity android:name=".driverlist" >  </activity>
+        <activity android:name=".driver1" />
+        <activity android:name=".Delivery1" >   </activity>
+        <activity android:name=".deliverydetails"/>
+
+
+        <!--<activity android:name=".driver1"></activity>
+        <activity android:name=".Delivery1" />-->
+
         <activity android:name=".appHome"></activity>
         <activity android:name=".EditPmt" />
         <activity android:name=".ViewPmt" />
@@ -83,11 +95,21 @@
         <activity
             android:name=".Explore"
             android:label="@string/title_activity_explore" />
+
+        <!-- <activity android:name=".MainActivity">
         <!-- <activity android:name=".MainActivity">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
 
+
+
+         </activity>-->
+        <activity android:name=".MainActivity" > <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter> </activity>
         <activity android:name=".List" />
 
 

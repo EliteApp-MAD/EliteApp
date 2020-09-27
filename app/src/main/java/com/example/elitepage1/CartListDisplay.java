@@ -3,6 +3,7 @@ package com.example.elitepage1;
 import android.Manifest;
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.ClipData;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -10,6 +11,7 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -34,7 +36,6 @@ public class CartListDisplay extends AppCompatActivity {
     LinearLayout linearLayout;
     ArrayList<CartList> list;
     CartListAdapter adapter = null;
-    //  Button btnbuy;
     Context context;
 
     @Override
@@ -42,8 +43,6 @@ public class CartListDisplay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cart_list_activity);
 
-        //linearLayout = findViewById(R.id.gridView1);
-        //   btnbuy = findViewById(R.id.buy_btn2);
         gridView = findViewById(R.id.gridView1);
         list = new ArrayList<>();
         adapter = new CartListAdapter(this, R.layout.shopping_cart, list);
@@ -59,78 +58,37 @@ public class CartListDisplay extends AppCompatActivity {
             String quantity = cursor.getString(3);
             byte[] image = cursor.getBlob(4);
 
-            //list.add(new FOOD(name, price, image, id));
             list.add(new CartList(id, name, price, quantity, image));
         }
         adapter.notifyDataSetChanged();
 
-  /*      gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+      gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                // final ItemList itemList
-                // -
-                final CartList cartList =list.get(position);
-                AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setTitle("Test");
-                builder.setMessage("dddd");
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                builder.setPositiveButton("Buy", new DialogInterface.OnClickListener() {
+                CharSequence[] items = {"Update", "Delete"};
+                AlertDialog.Builder dialog = new AlertDialog.Builder(CartListDisplay.this);
+
+                dialog.setTitle("Choose an action");
+                dialog.setItems(items, new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        //startActivity(new Intent(context,Item_buy.class));
-                        Intent intent =new Intent(context,Item_buy.class);
-
-                        intent.putExtra("id",String.valueOf(itemList.getId()));
-                        intent.putExtra("name",String.valueOf(itemList.getName()));
-                        intent.putExtra("price",String.valueOf(itemList.getPrice()));
-                        intent.putExtra("image",String.valueOf(itemList.getImage()));
-                        //imageViewToByte(imageView)
-                        // byte[] image = cursor.getBlob(4);
-                        //  Bitmap bmp= BitmapFactory.decodeByteArray(image, 0 , image.length);
-                        // intent.putExtra("imageData", bmp);
-                        // imageView.setImageBitmap(bmp);
-                        //Toast.makeText(this,"Done", Toast.LENGTH_SHORT).show();
-                        startActivity(intent);
-                        //Toast.makeText(getApplicationContext(), "Update", Toast.LENGTH_SHORT).show();
-                        //showDialogUpdate(ItemListDis.this);
+                    public void onClick(DialogInterface dialogInterface, int item) {
+                        if(item == 0){
+                            //update
+                            Toast.makeText(getApplicationContext(), "Update...", Toast.LENGTH_SHORT).show();
+                        }
+                        else{
+                            //delete
+                            Toast.makeText(getApplicationContext(), "Delete...", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
-                builder.show();
+                dialog.show();
+                return true;
             }
-        }); */
-
-
+        });
     }
 
     ImageView imageViewFood;
 
-   /*private void showDialogUpdate(Activity activity) {
-
-        final Dialog dialog = new Dialog(activity);
-        dialog.setContentView(R.layout.activity_item_buy);
-        dialog.setTitle("Buy");
-
-       // imageViewFood = (ImageView) dialog.findViewById(R.id.imageViewItem);
-      //  final EditText edtName = (EditText) dialog.findViewById(R.id.edtName);
-      //  final EditText edtPrice = (EditText) dialog.findViewById(R.id.edtPrice);
-       // Button btnUpdate = (Button) dialog.findViewById(R.id.btnUpdate);
-
-        // set width for dialog
-        int width = (int) (activity.getResources().getDisplayMetrics().widthPixels * 0.95);
-        // set height for dialog
-        int height = (int) (activity.getResources().getDisplayMetrics().heightPixels * 0.7);
-        dialog.getWindow().setLayout(width, height);
-        dialog.show();
-
-        imageViewFood.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // request photo library
-                ActivityCompat.requestPermissions(
-                        ItemListDis.this,
-                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                        888
-                );
-            }
-        });*/
 }

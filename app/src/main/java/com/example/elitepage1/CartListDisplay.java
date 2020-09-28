@@ -62,26 +62,41 @@ public class CartListDisplay extends AppCompatActivity {
         }
         adapter.notifyDataSetChanged();
 
-      gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, final int position, long l) {
 
-                CharSequence[] items = {"Update", "Delete"};
+                CharSequence[] items = {"Delete"};
                 AlertDialog.Builder dialog = new AlertDialog.Builder(CartListDisplay.this);
 
-                dialog.setTitle("Choose an action");
+                dialog.setTitle("Remove an item");
                 dialog.setItems(items, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int item) {
-                        if(item == 0){
+                      /*  if (item == 0) {
                             //update
-                            Toast.makeText(getApplicationContext(), "Update...", Toast.LENGTH_SHORT).show();
-                        }
-                        else{
+                            //Toast.makeText(getApplicationContext(), "Update...", Toast.LENGTH_SHORT).show();
+                            Cursor c = Item_buy.sqLiteHelperItem.getData1("SELECT id FROM CartList");
+                            ArrayList<Integer> arrID = new ArrayList<Integer>();
+                            while (c.moveToNext()) {
+                                arrID.add(c.getInt(0));
+                            }
+                            //show dialog update at here
+                         //   showDialogUpdate(CartListDisplay.this, arrID.get(position));
+                        } else {    */
+
                             //delete
-                            Toast.makeText(getApplicationContext(), "Delete...", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(getApplicationContext(), "Delete...", Toast.LENGTH_SHORT).show();
+                            Cursor c = Item_buy.sqLiteHelperItem.getData1("SELECT id FROM CartList");
+                            ArrayList<Integer> arrID = new ArrayList<Integer>();
+                            while (c.moveToNext()) {
+                                arrID.add(c.getInt(0));
+                            }
+                            showDialogDelete(arrID.get(position));
                         }
-                    }
+
+
+                    //}
                 });
                 dialog.show();
                 return true;
@@ -91,4 +106,31 @@ public class CartListDisplay extends AppCompatActivity {
 
     ImageView imageViewFood;
 
+    private void showDialogDelete(final int idItem) {
+        AlertDialog.Builder dialogDelete = new AlertDialog.Builder(CartListDisplay.this);
+
+        dialogDelete.setTitle("Warning !");
+        dialogDelete.setMessage("Are you sure to remove this item ?");
+        dialogDelete.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                try {
+                    Item_buy.sqLiteHelperItem.removeData(idItem);
+                    Toast.makeText(getApplicationContext(), "Remove Successfully !", Toast.LENGTH_SHORT).show();
+                } catch (Exception e) {
+                    Log.e("error", e.getMessage());
+                }
+                // updateCartListDisplay();
+            }
+        });
+        dialogDelete.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+        });
+        dialogDelete.show();
+    }
 }
+
+

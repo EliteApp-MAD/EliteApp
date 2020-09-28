@@ -102,4 +102,16 @@ public class SQLiteHelperItem extends SQLiteOpenHelper {
 
     }
 
+    public void removeData(int id) {
+        SQLiteDatabase database = getWritableDatabase();
+
+        String sql = "DELETE FROM CartList WHERE id = ?";
+        SQLiteStatement statement = database.compileStatement(sql);
+        statement.clearBindings();
+        statement.bindDouble(1, (double)id);
+
+        statement.execute();
+        database.close();
+    }
+
 }

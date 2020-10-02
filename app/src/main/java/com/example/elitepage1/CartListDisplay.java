@@ -73,20 +73,6 @@ public class CartListDisplay extends AppCompatActivity {
                 dialog.setItems(items, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int item) {
-                      /*  if (item == 0) {
-                            //update
-                            //Toast.makeText(getApplicationContext(), "Update...", Toast.LENGTH_SHORT).show();
-                            Cursor c = Item_buy.sqLiteHelperItem.getData1("SELECT id FROM CartList");
-                            ArrayList<Integer> arrID = new ArrayList<Integer>();
-                            while (c.moveToNext()) {
-                                arrID.add(c.getInt(0));
-                            }
-                            //show dialog update at here
-                         //   showDialogUpdate(CartListDisplay.this, arrID.get(position));
-                        } else {    */
-
-                            //delete
-                            //Toast.makeText(getApplicationContext(), "Delete...", Toast.LENGTH_SHORT).show();
                             Cursor c = Item_buy.sqLiteHelperItem.getData1("SELECT id FROM CartList");
                             ArrayList<Integer> arrID = new ArrayList<Integer>();
                             while (c.moveToNext()) {

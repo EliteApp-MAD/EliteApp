@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">ElitePage1</string>
+    <string name="btncalct">Calculate</string>
+
+
+
+
+
+
+
+
 
  <!--   <string name="txtdes2">ENTER CONTACT DETAILS</string>
     <string name="txtphone">Phone</string>
@@ -53,13 +62,7 @@
     <string name="msgsu">By creating an account you agree to our terms of services and privacy policy.</string>
     <string name="btnsignup">Create an Account</string>
 
-    <string name="signin">Sign In</string>
-    <string name="welcomesi">Welcome to Elite</string>
-    <string name="usernamesi">User Name   *</string>
-    <string name="usernamesival">User Name   *</string>
-    <string name="passwordsi">Password   *</string>
-    <string name="passwordsival">Password   *</string>
-    <string name="btnsignin">Sign In</string>
+
 
 
     <string name="buy_btn">Buy</string>
@@ -149,7 +152,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="first_btn">btn</string>
 
-    <string name="textar11">ADD NEW ITEAM</string>
+    <string name="textar11">ADD NEW ITEMS</string>
     <string name="textar22">Iteam Name</string>
     <string name="textar33">Price per Kg</string>
     <string name="txtar44">category</string>
@@ -157,4 +160,8 @@
     <string name="btningg">"Choose a Image "</string>
     <string name="btnimgg">Add an Image</string>
     <string name="btnreg">Submit</string>
+    <string name="txttot">Enter the Total Amount</string>
+    <string name="txtpri">Enter the Price per unite</string>
+    <string name="txtp">Total Profit.....</string>
+    <string name="txtbtncalc">Calculate</string>
 </resources>

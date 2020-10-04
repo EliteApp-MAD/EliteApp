@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
@@ -29,6 +30,10 @@ public class newReg extends AppCompatActivity {
     EditText name,price,category;
     Button choose,Submit,dispaly;
     ImageView imageView;
+
+    EditText txtamo,txtpri;
+    TextView txttcalc;
+    Button btncaliar;
     private Context context;
     final int REQUEST_CODE_GALLERY = 999;
     public static SQLiteHelper sqLiteHelper;
@@ -43,6 +48,11 @@ public class newReg extends AppCompatActivity {
         dispaly=(Button)findViewById(R.id.btn_dis);
         dispaly.setText("View Item List");
         imageView = (ImageView) findViewById(R.id.imageView);
+        txtamo=findViewById(R.id.txttotamon);
+        txtpri=findViewById(R.id.txtpri);
+        txttcalc=findViewById(R.id.txttcalc);
+        btncaliar=findViewById(R.id.btncalct);
+        btncaliar.setText(R.string.btncalct);
     }
 
     @Override
@@ -97,6 +107,20 @@ public class newReg extends AppCompatActivity {
             }
         });
 
+
+        btncaliar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                float intval1 =Float.parseFloat(txtamo.getText().toString());
+                float intval2 =Float.parseFloat(txtpri.getText().toString());
+                txttcalc.setText("Profit:"+"Rs"+String.valueOf(calculateProfite(intval1,intval2)));
+            }
+        });
+
+    }
+
+    public static float calculateProfite(float totamount,float pricepertini){
+        return totamount * pricepertini;
     }
     public static byte[] imageViewToByte(ImageView image) {
         Bitmap bitmap = ((BitmapDrawable)image.getDrawable()).getBitmap();

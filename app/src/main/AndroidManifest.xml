@@ -31,12 +31,12 @@
         <activity android:name=".MainActivity" ></activity>
         <!--<activity android:name=".Item_buy" />-->
 
-        <activity android:name=".selectdriver"> </activity>
+     <!--   <activity android:name=".selectdriver"> </activity>
         <activity android:name=".driver" />
         <activity android:name=".driverlist" >  </activity>
         <activity android:name=".driver1" />
         <activity android:name=".Delivery1" >   </activity>
-        <activity android:name=".deliverydetails"/>
+        <activity android:name=".deliverydetails"/> -->
 
 
         <!--<activity android:name=".driver1"></activity>
@@ -60,10 +60,9 @@
         <activity android:name=".Payment_paid_Success" />
         <activity android:name=".SuccessfullMessage" />
         <activity android:name=".Payment_Methods" />
-        <activity android:name=".driver1" />
-        <activity android:name=".Delivery1" />
+   <!--     <activity android:name=".Delivery1" />
         <activity android:name=".deliverydetails" />
-    <!--    <activity android:name=".SignUp" />
+       <activity android:name=".SignUp" />
         <activity android:name=".SignIn" />
         <activity android:name=".ShoppingCartRemove" />
         <activity android:name=".ShoppingCartFinal" />  -->
@@ -87,28 +86,28 @@
 
 
 
-        <!-- <activity android:name=".MainActivity">
+         <activity android:name=".MainActivity">
 
              <intent-filter>
                  <action android:name="android.intent.action.MAIN" />
 
 
 
-         </activity>-->
+         </activity>
         <activity android:name=".MainActivity" > <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
 
-        <activity android:name=".List" />
+             <activity android:name=".List" />
 
 
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>-->
+        </activity>
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter> </activity>
+            <category android:name="android.intent.category.LAUNCHER" />-->
+   <!--     </intent-filter> </activity>-->
 
     </application>
 

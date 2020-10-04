@@ -81,7 +81,7 @@ public class SQLiteHelperItem extends SQLiteOpenHelper {
         database.close();
     }
 
-    public Cursor getData(String sql){
+    public Cursor getData1(String sql){
         SQLiteDatabase database = getReadableDatabase();
         return database.rawQuery(sql, null);
     }
@@ -100,6 +100,18 @@ public class SQLiteHelperItem extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
+    }
+
+    public void removeData(int id) {
+        SQLiteDatabase database = getWritableDatabase();
+
+        String sql = "DELETE FROM CartList WHERE id = ?";
+        SQLiteStatement statement = database.compileStatement(sql);
+        statement.clearBindings();
+        statement.bindDouble(1, (double)id);
+
+        statement.execute();
+        database.close();
     }
 
 }

@@ -143,6 +143,15 @@ public class Item_buy extends AppCompatActivity {
                 }
             }
         });
+        badd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Item_buy.this,ShoppingCartFinal.class);
+                startActivity(intent);
+
+            }
+        });
 
         badd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -153,6 +162,7 @@ public class Item_buy extends AppCompatActivity {
 
             }
         });
+
 
     }
 

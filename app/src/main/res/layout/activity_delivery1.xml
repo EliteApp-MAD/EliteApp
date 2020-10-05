@@ -8,7 +8,7 @@
 
     tools:context=".Delivery1"
     android:background="@drawable/s7">
-
+<!--
     <TextView
         android:id="@+id/txtname"
         android:layout_width="148dp"
@@ -209,7 +209,7 @@
         app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toEndOf="@+id/txtsuccessfulldeliveries"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintVertical_bias="0.517" />   -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

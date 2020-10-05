@@ -4,27 +4,25 @@ public class ToPay {
 
     private int id;
     private String amount, reference, date, time;
-    private long started, finished;
 
 
 
-    public ToPay(String amount, String reference, String date, String time, long started, long finished) {
+
+    public ToPay(String amount, String reference, String date, String time) {
         this.amount = amount;
         this.reference = reference;
         this.date = date;
         this.time = time;
-        this.started = started;
-        this.finished = finished;
+
     }
 
-    public ToPay(int id, String amount, String reference, String date, String time, long started, long finished) {
+    public ToPay(int id, String amount, String reference, String date, String time) {
         this.id = id;
         this.amount = amount;
         this.reference = reference;
         this.date = date;
         this.time = time;
-        this.started = started;
-        this.finished = finished;
+
     }
 
 
@@ -69,21 +67,7 @@ public class ToPay {
         this.time = time;
     }
 
-    public long getStarted() {
-        return started;
-    }
 
-    public void setStarted(long started) {
-        this.started = started;
-    }
-
-    public long getFinished() {
-        return finished;
-    }
-
-    public void setFinished(long finished) {
-        this.finished = finished;
-    }
 
     public ToPay() {
     }

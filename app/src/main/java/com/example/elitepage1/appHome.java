@@ -36,7 +36,7 @@ public class appHome extends AppCompatActivity {
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity( new Intent(context,Delivery1.class));
+                startActivity( new Intent(context,newReg.class));
             }
 
         });

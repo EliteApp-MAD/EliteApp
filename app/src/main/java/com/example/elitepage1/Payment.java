@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Payment extends AppCompatActivity {
@@ -18,7 +19,7 @@ public class Payment extends AppCompatActivity {
 
     private EditText amount, reference, date, time;
     private Button add;
-  //  private DbHandler dbHandler;
+  private DbHandlerPMT dbHandler;
     private Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +32,30 @@ public class Payment extends AppCompatActivity {
         time = findViewById(R.id.editTextTime);
 
         add = findViewById(R.id.buttonAdd);
+
+
         context = this;
+        dbHandler = new DbHandlerPMT(context);
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity( new Intent(context,ViewPmt.class));
+            public void onClick(View v) {
+                String userAmount = amount.getText().toString();
+                String userReference = reference.getText().toString();
+                String userDate = date.getText().toString();
+                String userTime = time.getText().toString();
+
+
+                ToPay toPay = new ToPay(userAmount,userReference,userDate,userTime);
+                dbHandler.addPay(toPay);
+
+                startActivity(new Intent(context,ViewPmt.class));
+
+                Toast.makeText(getApplicationContext(),"Payment details inserted",Toast.LENGTH_SHORT).show();
             }
+
+
+
         });
     }
 }

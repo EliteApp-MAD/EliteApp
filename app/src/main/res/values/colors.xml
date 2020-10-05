@@ -19,7 +19,7 @@
     <color name="btColor3">#FFAA00</color>
     <color name="btColor5">#00FFAE</color>
 
-
-
+    <color name="paybtn">#DFAF00</color>
+    <color name="payviewbtn">#00FFB7</color>
 
 </resources>

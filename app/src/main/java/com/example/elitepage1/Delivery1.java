@@ -2,20 +2,11 @@ package com.example.elitepage1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
-
 import android.content.Context;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-
-public class Delivery1 extends AppCompatActivity {
-
-    Button button;
-
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -25,23 +16,10 @@ public class Delivery1 extends AppCompatActivity {
 
     private DbHandler dbHandler;
     private Context context;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delivery1);
-
-Navodi
-        button = findViewById(R.id.btndriver1);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),driver1.class);
-                startActivity(i);
-            }
-        });
-    }
 
         name = findViewById(R.id.editTextname);
         time = findViewById(R.id.editTexttime);
@@ -87,7 +65,6 @@ Navodi
 
 
     }
-
 
 
 }

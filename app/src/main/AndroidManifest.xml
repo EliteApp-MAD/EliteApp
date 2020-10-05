@@ -5,7 +5,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/elite_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -17,25 +17,24 @@
         <activity android:name=".driver1" />
         <activity android:name=".Delivery1" >   </activity>
         <activity android:name=".deliverydetails"/>
-
-
-        <!--<activity android:name=".driver1"></activity>
-        <activity android:name=".Delivery1" />-->
-
+        <activity android:name=".SignUp"/>
+        <activity android:name=".SignIn"/>
         <activity android:name=".appHome"></activity>
         <activity android:name=".EditPmt" />
         <activity android:name=".ViewPmt" />
-        <activity android:name=".driver1" />
-        <activity android:name=".Delivery1" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".SignIn" />
+        <activity android:name=".ShoppingCartRemove" />
+        <activity android:name=".ShoppingCartFinal"/>
+        <activity android:name=".Item_buy"></activity>
+        <activity android:name=".Item_Suggest" />
+        <activity android:name=".Display" />
+        <activity android:name=".List"></activity>
+        <activity android:name=".Payment_paid_Success" />
+        <activity android:name=".SuccessfullMessage" />
+        <activity android:name=".Payment_Methods" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Explore" />
 
-
-        <activity android:name=".newReg"><intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".newReg"></activity>
         <activity android:name=".itemRegistration">
 
         </activity>
@@ -47,76 +46,15 @@
             android:label="Item List"
             android:parentActivityName=".newReg" />
 
-        <activity android:name=".MainActivity" ></activity>
-        <!--<activity android:name=".Item_buy" />-->
-
-        <activity android:name=".SignUp"/>
-        <activity android:name=".SignIn"/>
-        <activity android:name=".ShoppingCartRemove" />
-        <activity android:name=".ShoppingCartFinal" />
-        <activity android:name=".Item_buy" />
-        <activity android:name=".ShoppingCartFinal"/>
-
-
-        <activity android:name=".Item_buy"></activity>
-        <activity android:name=".Item_Suggest" />
-        <activity android:name=".Display" />
-        <activity android:name=".List" />
-        <activity android:name=".Payment_Unsuccsess" />
-        <activity android:name=".List"></activity>
-        <!--<activity android:name=".MainActivity" >-->
-
         <activity android:name=".Payment_Unsuccsess"></activity>
-        <activity android:name=".Payment_paid_Success" />
-        <activity android:name=".SuccessfullMessage" />
-        <activity android:name=".Payment_Methods" />
-        <activity android:name=".Payment" />
-        <activity android:name=".Explore" />
-        <activity android:name=".MainActivity">
-        <activity android:name=".driver1" />
-        <activity android:name=".Delivery1" />
-        <activity android:name=".deliverydetails" />
-    <!--    <activity android:name=".SignUp" />
-        <activity android:name=".SignIn" />
-        <activity android:name=".ShoppingCartRemove" />
-        <activity android:name=".ShoppingCartFinal" />  -->
-
-
-        <!-- <activity android:name=".Item_buy"></activity>
-         <activity android:name=".Item_Suggest" />
-         <activity android:name=".Display" />
-         <activity android:name=".List"></activity>
-         <activity android:name=".MainActivity" >-->
-
-       <!-- <activity android:name=".Payment_Unsuccsess" />
-        <activity android:name=".Payment_paid_Success" />
-        <activity android:name=".SuccessfullMessage"/>
-        <activity android:name=".Payment_Methods" />-->
-        <activity
-            android:name=".Explore"
-            android:label="@string/title_activity_explore" />
-
-        <!-- <activity android:name=".MainActivity">
-        <!-- <activity android:name=".MainActivity">
-
-             <intent-filter>
-                 <action android:name="android.intent.action.MAIN" />
-
-
-
-         </activity>-->
         <activity android:name=".MainActivity" > <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter> </activity>
-        <activity android:name=".List" />
 
 
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>-->
     </application>
 
 </manifest>
